@@ -1,0 +1,36 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 80px;
+    border-radius: 20px;
+    background-color: white;
+    height: 90vh;
+    padding-bottom: 10px;
+    
+    & > ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 50px;
+        align-items: center;
+        padding-left: 0;
+
+        & li {
+            padding-left: 0;
+        }
+    }
+
+    &-link {
+        background-color: black;
+        border-radius: 10px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
