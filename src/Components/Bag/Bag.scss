@@ -1,0 +1,66 @@
+.bag {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    width: 210px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+
+    & h1 {
+        color: #1A1F16;
+        font-family: 'Cabin';
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    & .items {
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       gap: 15px;
+       flex-wrap: wrap;
+
+        & .imageContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            background-color: #fff;
+            width: 60px;
+            height: 60px;
+            
+            & img {
+                width: 90%;
+                height: 90%;
+            }
+        }
+    }
+
+    & .view {
+        display: flex;
+        width: 150px;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border-radius: 14px;
+        background-color: #1A1F16;
+        cursor: pointer;
+        margin-top: 42px;
+
+        & p {
+            color: #FFF;
+            font-family: 'Cabin';
+            font-size: 20px;
+            font-weight: 500;
+
+            & a {
+                color: #FFF;
+                text-decoration: none;
+            }
+        }
+    }
+}

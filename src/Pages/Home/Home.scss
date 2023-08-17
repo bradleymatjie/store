@@ -1,0 +1,125 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    height: 90vh;
+    position: relative;
+    left: 30px;
+   
+
+    & label {
+        color: #60695C;
+        font-family: Cabin;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.32px;
+        display: flex;
+        width: 507px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 8px;
+        margin-bottom: 26px;
+
+        & input {
+            width: 100%;
+            border: none;
+            background: #FFF;
+            padding: 10px 0;
+            box-shadow: 0px 4px 16px 0px rgba(26, 31, 22, 0.15);
+            color: rgba(26, 31, 22, 0.50);
+            font-family: 'Cabin';
+            font-size: 16px;
+            padding-left: 16px;
+        
+            &::placeholder {
+                color: rgba(26, 31, 22, 0.50);
+                font-family: 'Cabin';
+                font-size: 16px;
+                padding-left: 16px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    & .products {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        gap: 36px;
+        padding: 20px 30px;
+        flex-wrap: wrap;
+        overflow-y: scroll;
+    }
+}
+
+.product {
+    border-radius: 20px 20px 20px 20px;
+    padding: 8px;
+    width: 220px;
+    height: 370px;
+    transition: .5s all;
+    
+    &:hover {
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    & .imageContainer {
+        display: flex;
+        padding: 16px;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 20px;
+       
+         & > img {
+            width: 100%;
+            height: 200px;
+            flex-shrink: 0;
+        }
+    }
+
+    & h2 {
+        font-family: 'Cabin';
+        font-size: 20px;
+        font-weight: 500;
+        color: #1A1F16;
+        padding-left: 5px;
+    }
+
+    & h3 {
+        font-family: 'Cabin';
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: -0.32px;
+        color: #60695C;
+        padding-left: 5px;
+    }
+
+    & .price {
+        display: flex;
+        height: 40px;
+        justify-content: space-between;
+        padding: 0 5px;
+        align-items: center;
+
+        & p {
+            color: #1A1F16;
+            font-family: 'Cabin';
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        & div {
+            background-color: #1A1F16;
+            padding: 6px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    }
+    
+}

@@ -1,0 +1,111 @@
+.products_in_bag {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 90vh;
+    position: relative;
+    left: 30px;
+
+    & h1 {
+        color: #1A1F16;
+        font-family: 'Cabin';
+        font-size: 32px;
+        font-weight: 400;
+        padding-left: 50px;
+    }
+}
+
+.products_container {
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.product-item { 
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 90%;
+    height: 280px;
+    border-radius: 22px;
+    padding-right: 15px;
+
+    & > img {
+        width: 205px;
+        height: 254px;
+    }
+
+    & h2 {
+        color: #1A1F16;
+        font-family: 'Cabin';
+        font-size: 32px;
+        font-weight: 400;
+    }
+
+    & h3 {
+        color: #60695C;
+        font-family: 'Cabin';
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    & p {
+        color: #1A1F16;
+        font-family: 'Cabin';
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: -0.4px;
+    }
+
+    & .stars {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        height: 30px;
+
+        & img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    & .price {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 50px;
+
+        & h4 {
+            color:#1A1F16;
+            font-family: 'Cabin';
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        & div {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+
+            & .subtract {
+                color: #E5252C;
+                transform: scale(2.5);
+            }
+
+            & h5 {
+                color:#1A1F16;
+                font-family: 'Cabin';
+                font-size: 20px;
+                font-weight: 400;
+            }
+
+            & .add {
+                color: #02D693;
+                transform: scale(2);
+            }
+        }
+    }
+}
